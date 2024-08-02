@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Exemplo</title>
+</head>
+<body>
+    <form action="Formulario.php" method="post">
+        <fieldset>
+            <legend>Formulário de Exemplo</legend>
+            
+            <!-- Caixa de texto de uma linha -->
+            <label for="textfield">Caixa de texto de uma linha:</label>
+            <input type="text" id="textfield" name="textfield" required>
+            <br><br>
+            
+            <!-- Caixa de texto de rolagem -->
+            <label for="textarea">Caixa de texto de rolagem:</label>
+            <textarea id="textarea" name="textarea" rows="4" cols="50" required></textarea>
+            <br><br>
+            
+            <!-- Caixa de seleção -->
+            <label for="checkbox">Caixa de seleção:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" value="1">
+            <label for="checkbox">Opção 1</label>
+            <br><br>
+            
+            <!-- Botão de opção -->
+            <label>Botão de opção:</label>
+            <input type="radio" id="radio1" name="radio" value="opcao1" required>
+            <label for="radio1">Opção 1</label>
+            <input type="radio" id="radio2" name="radio" value="opcao2">
+            <label for="radio2">Opção 2</label>
+            <br><br>
+            
+            <!-- Menu suspenso -->
+            <label for="select">Menu suspenso:</label>
+            <select id="select" name="select" required>
+                <option value="valor1">Opção 1</option>
+                <option value="valor2">Opção 2</option>
+                <option value="valor3">Opção 3</option>
+            </select>
+            <br><br>
+            
+            <!-- Botão de envio -->
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
