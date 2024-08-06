@@ -1,0 +1,18 @@
+<form method="post" action="prontuario.php">
+    <label for="prontuario">Prontuario:</label>
+    <input type="text" id="prontuario" name="prontuario" required><br><br>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" min="15" max="75" required><br><br>
+
+    <label for="periodo">Periodo (V-Vespertino ou N-Noturno):</label>
+    <input type="text" id="periodo" name="periodo" pattern="[VN]{1}" required><br><br>
+
+    <label for="modulo">Modulo (1 a 4):</label>
+    <input type="number" id="modulo" name="modulo" min="1" max="4" required><br><br>
+
+    <input type="submit" value="Enviar">
+</form>
